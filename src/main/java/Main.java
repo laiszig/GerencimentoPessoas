@@ -10,6 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Você é pessoa física ou jurídica? Insira F para física, ou J para jurídica: ");
         String pessoa = scanner.nextLine().toLowerCase();
+
         Empregado empregado = new Empregado();
 
         System.out.println("Inserir nome: ");
