@@ -10,7 +10,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Você é pessoa física ou jurídica? Insira F para física, ou J para jurídica: ");
         String pessoa = scanner.nextLine().toLowerCase();
-
         Empregado empregado = new Empregado();
 
         System.out.println("Inserir nome: ");
@@ -34,7 +33,7 @@ public class Main {
             System.out.println("Inserir CNPJ: ");
             empregadoJuridico.setCnpj(scanner.nextLine());
             System.out.println("Inserir data de admissão: ");
-            empregadoJuridico.setDataAdmissao(scanner.nextLine());
+            empregadoJuridico.setDataAdmissao(scanner.next());
             System.out.println("Imprimindo valores "+ empregadoJuridico.getNome() + empregadoJuridico.getEndereco() + empregadoJuridico.getTelefone() + empregadoJuridico.getEmail());
         }
     }
